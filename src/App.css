@@ -1,38 +1,276 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;800&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: black;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  color: gold;
+  height: 60px;
+  /* border-bottom: 1px solid white; */
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.outer-container {
+  /* border: 2px solid red; */
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.intro-container {
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid red; */
+  height: fit-content;
+  width: 90%;
+  align-items: center;
+  justify-content: space-evenly;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  padding: 20px;
+}
+
+.intro-container input[type='text'] {
+  border: 1px solid gold;
+  width: 70%;
+  height: 40px;
+  border-radius: 5px;
+  outline: none;
+  padding: 0 6px;
+  color: white;
+  margin-top: 20px;
+}
+
+::placeholder {
+  color: white;
+}
+
+.crypto-list {
+  margin-top: 20px;
+  display: flex;
+  height: 35px;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 10px;
+  align-items: center;
+  background-color: gold;
+  width: 70%;
+  color: black;
+  font-size: 0.6rem;
+  border-radius: 3px;
+}
+
+.test {
+  display: flex;
+  background-color: gold;
+  /* border: 2px solid red; */
+  width: 60%;
+  justify-content: space-between;
+}
+
+.crypto-list h2 {
+  color: black;
+  background-color: transparent;
+}
+
+.coin-container {
+  display: flex;
+  height: 70px;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 10px;
+  align-items: center;
+  width: 70%;
+  font-size: 0.6rem;
+  border-radius: 3px;
+  border-bottom: 1px solid white;
+  /* border: 2px solid red; */
+  margin: 5px;
+}
+
+.coin-container-test {
+  display: grid;
+  /* background-color: gold; */
+  grid-template-columns: 30% 18% 27%;
+  /* border: 2px solid red; */
+  width: 60%;
+  justify-content: space-between;
+}
+
+.coin-container h2 {
+  color: white;
+}
+
+.coin-data {
+  display: flex;
+  /* border: 1px solid green; */
+  width: fit-content;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.coin-image {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.loader {
+  margin-top: 5%;
+}
+
+.carousel {
+  /* border: 2px solid red; */
+  width: 98%;
+  padding-left: 20px;
+  margin-top: 30px;
+}
+
+.trending-coin-img {
+  height: 60px;
+}
+
+.trending-coin-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-name {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  /* border: 2px solid red; */
+  width: 150px;
+  max-width: 180px;
+}
+
+.name-price {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  /* border: 2px solid red; */
+  margin-top: 20px;
+  display: flex;
+  color: white;
+}
+
+.coin-profile {
+  /* border: 2px solid green; */
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 30%;
+  height: fit-content;
+  border-right: 1px solid wheat;
+  font-size: 15px;
+}
+
+.market-data {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.graph {
+  width: 1000px;
+  display: "flex";
+  flex-direction: "column";
+  align-items: "center";
+  justify-content: "center";
+  margin-top: 2px;
+  margin-left: 30px;
+}
+.btn-container{
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 10px;
+}
+.btn{
+  border: 2px solid gold;
+  padding: 14px;
+  border-radius: 10px;
+  color: white;
+  width: 100px;
+  font-weight: 1000;
+}
+.active{
+  border: 2px solid black;
+  padding: 14px;
+  border-radius: 10px;
+  color: black;
+  font-weight: 1000;
+  width: 100px;
+  background-color: gold;
+}
+.btn:hover , .active:hover{
+  cursor: pointer;
+}
+.loader1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15%;
+}
+.page-number-container{
+  height: fit-content;
+  /* padding: 10px; */
+  /* border: 2px solid red; */
+  width: 30%;
+  display: flex;
+  margin: 10px;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+}
+
+.page-number-btn{
+  border: 2px solid gold;
+  border-radius: 2px;
+  height: 30px;
+  width: 30px;
+  color: white;
+  font-weight: 1000;
+  transition: all .3s ease-in;
+}
+.page-number-btn:hover {
+  cursor: pointer;
+  position: relative;
+  top: -2px;
+  background-color: gold;
+  color: black;
+}
+.page-active{
+  border: 2px solid gold;
+  border-radius: 2px;
+  height: 30px;
+  width: 30px;
+  color: black;
+  background-color: gold;
+  font-weight: 1000;
+  transition: ease-in 0.3s;
 }
