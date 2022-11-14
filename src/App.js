@@ -10,7 +10,7 @@ function App() {
     <HashRouter>
       <Navbar />
       <Routes>
-        <Route path='/React-Crypto-App' element={<HomePage/>}/>
+        <Route path='/' element={<HomePage/>}/>
         <Route path='/coins/:id' element={<CoinPage/>} />
       </Routes>
     </HashRouter>
