@@ -10,7 +10,7 @@ function App() {
     <BrowserRouter>
       <Navbar />
       <Routes>
-        <Route path='/' element={<HomePage/>}/>
+        <Route path='/React-Crypto-App' element={<HomePage/>}/>
         <Route path='/coins/:id' element={<CoinPage/>} />
       </Routes>
     </BrowserRouter>
