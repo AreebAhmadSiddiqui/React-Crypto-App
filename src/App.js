@@ -1,19 +1,19 @@
 import './App.css';
 import Navbar from './components/Navbar';
 import HomePage from './components/HomePage';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import CoinPage from './components/CoinPage';
 import { Route } from 'react-router-dom';
 import { Routes } from 'react-router-dom';
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Navbar />
       <Routes>
         <Route path='/React-Crypto-App' element={<HomePage/>}/>
         <Route path='/coins/:id' element={<CoinPage/>} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
